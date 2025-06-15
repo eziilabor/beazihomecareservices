@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beazi Home Care Services | Huntersville, North Carolina & Charlotte Area</title>
+    <meta name="description" content="Beazi Home Care Services provides compassionate in-home care for seniors in Huntersville, Charlotte, Cornelius, and Davidson—promoting independence and well-being.">
+    <meta name="keywords" content="home care, senior care, in-home care, elderly assistance, Beazi Home Care, Huntersville, Charlotte, Cornelius, Davidson, North Carolina, personal care, companionship, homemaking, home care aide">
+    <meta name="author" content="Beazi Home Care Services">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="hamburger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="hamburger.js" defer></script>
+    <style>
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            background: #f8fafc;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background: #ff9c22;
+            padding: 1rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .navbar .logo img {
+            height: 70px;
+            width: px;
+            object-fit: contain;
+            aspect-ratio: 1 / 1;
+            display: block;
+        }
+        .nav-links li a {
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .nav-links li a:hover {
+            color: #ff9c22;
+        }
+        #contact {
+            max-width: 600px;
+            margin: 3rem auto 2rem auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(10,61,98,0.07);
+            padding: 2.5rem 2rem;
+        }
+        #contact h2 {
+            text-align: center;
+            color: #0a3d62;
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+        .contact-info p {
+            margin: 0.5rem 0;
+            font-size: 1.08rem;
+        }
+        .contact-info a {
+            color: #ff9c22;
+            text-decoration: underline;
+        }
+        .contact-form label {
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+            display: block;
+            color: #0a3d62;
+        }
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.7rem;
+            margin-bottom: 1.1rem;
+            border-radius: 6px;
+            border: 1px solid #bfc9d1;
+            background: #f8fafc;
+            font-size: 1rem;
+            transition: border 0.2s;
+        }
+        .contact-form input:focus,
+        .contact-form select:focus,
+        .contact-form textarea:focus {
+            border: 1.5px solid #010508;
+            outline: none;
+        }
+        .contact-form button {
+            background: #ff9c22;
+            color: #fff;
+            border: none;
+            padding: 0.9rem 2.2rem;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 0.5rem;
+            display: block;
+            width: 100%;
+        }
+        .contact-form button:hover {
+            background: #ff9c22;
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .social-media a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.15rem;
+            text-decoration: none;
+            color: #0a3d62;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        .social-media a:hover {
+            color: #f9ca24;
+        }
+        .social-media img {
+            width: 28px;
+            height: 28px;
+        }
+        footer {
+            background: #ff9c22;
+            color: #fff;
+            text-align: center;
+            padding: 1.2rem 0;
+            font-size: 1rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 700px) {
+            #contact {
+                padding: 1.2rem 0.7rem;
+            }
+            .navbar .container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container" style="display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+            <div class="logo">
+                <img src="logo.png" alt="Logo" />
+            </div>
+            <!-- Hamburger Icon -->
+            <div class="hamburger" id="hamburger">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks" style="display: flex; gap: 1.5rem; align-items: center; list-style: none; margin: 0; padding: 0;">
+                <li><a href="beazi_homecare.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info" style="margin-bottom: 2rem; text-align: center;">
+            <p><strong>Phone:</strong> 
+                <a href="tel:7042991547">704-299-1547</a> | 
+                <a href="tel:7046493022">704-649-3022</a>
+            </p>
+            <p><strong>Email:</strong> <a href="mailto:beazihomecareservices@gmail.com">beazihomecareservices@gmail.com</a></p>
+            <p><strong>Address:</strong> <a href="https://www.google.com/maps?q=9723+Northcross+Center+Court,+Suite+K,+Huntersville,+North+Carolina+28078" target="_blank" rel="noopener">9723 Northcross Center Court, Suite K, Huntersville, North Carolina 28078</a></p>
+            <p>We proudly serve clients in Huntersville, Charlotte, Cornelius, Davidson, and the surrounding North Carolina communities.</p>
+        </div>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <div class="form-group">
+                <label for="service">Service Interested In:</label>
+                <select id="service" name="service">
+                    <option value="">-- Please Select --</option>
+                    <option value="personal-care">Personal Care</option>
+                    <option value="homemaking">Homemaking</option>
+                    <option value="home-care-aide">Home Care Aide</option>
+                    <option value="companionship">Companionship</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="preferred-contact">Preferred Contact Method:</label>
+                <select id="preferred-contact" name="preferred-contact">
+                    <option value="">-- Please Select --</option>
+                    <option value="phone">Phone</option>
+                    <option value="text">Text</option>
+                    <option value="email">Email</option>
+                </select>
+            </div>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div style="height: 2.5rem;"></div>
+        <div class="social-media">
+            <a href="https://m.facebook.com/100092586957288/" target="_blank" rel="noopener">
+                <img src="./2023_Facebook_icon.svg.webp" alt="Facebook logo"> Facebook
+            </a>
+            <a href="https://www.instagram.com/beazihomecare/" target="_blank" rel="noopener">
+                <img src="instagram-vector-social-media-icon-7-june-2021-bangkok-thailand_53876-136728.avif" alt="Instagram logo"> Instagram
+            </a>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Beazi Home Care Services. All rights reserved. Serving Huntersville, Charlotte, Cornelius, Davidson, and surrounding North Carolina areas.</p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f6f6f6;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.about-centered {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+.logo img {
+    width: 120px;
+    height: auto;
+    max-width: 100%;
+    display: block;
+}
+
+.navbar {
+    background-color: #FF9C1A;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+.call-now {
+    background-color: white;
+    color: #f99418;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    margin: 8px 0;
+    transition: background 0.2s;
+}
+.call-now:hover {
+    background-color: #ffe5c2;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        width: 98%;
+        padding: 0 8px;
+    }
+    .navbar .container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+    .logo img {
+        width: 90px;
+    }
+    .hero {
+        padding: 60px 10px;
+    }
+    .hero-content h1 {
+        font-size: 1.6rem;
+    }
+    .hero-content p {
+        font-size: 1rem;
+    }
+    .photo-grid {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+    .service-item {
+        font-size: 1rem;
+    }
+    main {
+        padding: 20px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 70px;
+    }
+    .hero {
+        padding: 40px 5px;
+    }
+    .hero-content h1 {
+        font-size: 1.2rem;
+    }
+    .cta-button, .call-now {
+        font-size: 0.95rem;
+        padding: 10px 8px;
+    }
+    h2 {
+        font-size: 1.1rem;
+    }
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url('compassionate-care-a-caregiver-serving-a-meal-325716.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    padding: 40px 0;
+}
+
+h2 {
+    color: #dda153;
+    margin-bottom: 20px;
+}
+
+.service-photos {
+    padding: 40px 0 20px;
+    text-align: center;
+}
+
+.photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.photo-grid img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.service-item {
+    background-color: white;
+    padding: 15px;
+    border-left: 5px solid #fe9818;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+.service-item p {
+    margin-top: 8px;
+    font-size: 0.95rem;
+    color: #555;
+    font-weight: normal;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    background-color: #fe9818;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #e67e00;
+}
+
+footer {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+}
+
+.container.navbar-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+.hamburger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  transition: 0.3s;
+}

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beazi Home Care Services | Huntersville, North Carolina & Charlotte Area</title>
+    <meta name="description" content="Beazi Home Care Services provides compassionate in-home care for seniors in Huntersville, Charlotte, Cornelius, and Davidson—promoting independence and well-being.">
+    <meta name="keywords" content="home care, senior care, in-home care, elderly assistance, Beazi Home Care, Huntersville, Charlotte, Cornelius, Davidson, North Carolina, personal care, companionship, homemaking, home care aide">
+    <meta name="author" content="Beazi Home Care Services">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="hamburger.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <script src="hamburger.js" defer></script>
+    <style>
+        body {
+            font-family: 'Open Sans', Arial, sans-serif;
+            background: #f8fafc;
+            color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar {
+            background: #ff9c22;
+            padding: 1rem 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .navbar .logo img {
+            height: 110px;
+            width: 110px;
+            object-fit: contain;
+            aspect-ratio: 1 / 1;
+            display: block;
+        }
+        .nav-links li a {
+            color: #fff;
+            font-weight: 600;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        .nav-links li a:hover {
+            color: #ff9c22;
+        }
+        #contact {
+            max-width: 600px;
+            margin: 3rem auto 2rem auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(10,61,98,0.07);
+            padding: 2.5rem 2rem;
+        }
+        #contact h2 {
+            text-align: center;
+            color: #0a3d62;
+            margin-bottom: 1.5rem;
+            font-size: 2.2rem;
+            font-weight: 700;
+        }
+        .contact-info p {
+            margin: 0.5rem 0;
+            font-size: 1.08rem;
+        }
+        .contact-info a {
+            color: #ff9c22;
+            text-decoration: underline;
+        }
+        .contact-form label {
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+            display: block;
+            color: #0a3d62;
+        }
+        .contact-form input,
+        .contact-form select,
+        .contact-form textarea {
+            width: 100%;
+            padding: 0.7rem;
+            margin-bottom: 1.1rem;
+            border-radius: 6px;
+            border: 1px solid #bfc9d1;
+            background: #f8fafc;
+            font-size: 1rem;
+            transition: border 0.2s;
+        }
+        .contact-form input:focus,
+        .contact-form select:focus,
+        .contact-form textarea:focus {
+            border: 1.5px solid #010508;
+            outline: none;
+        }
+        .contact-form button {
+            background: #ff9c22;
+            color: #fff;
+            border: none;
+            padding: 0.9rem 2.2rem;
+            border-radius: 6px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 0.5rem;
+            display: block;
+            width: 100%;
+        }
+        .contact-form button:hover {
+            background: #ff9c22;
+        }
+        .social-media {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            align-items: center;
+            margin-bottom: 2rem;
+        }
+        .social-media a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 1.15rem;
+            text-decoration: none;
+            color: #0a3d62;
+            font-weight: 600;
+            transition: color 0.2s;
+        }
+        .social-media a:hover {
+            color: #f9ca24;
+        }
+        .social-media img {
+            width: 28px;
+            height: 28px;
+        }
+        footer {
+            background: #ff9c22;
+            color: #fff;
+            text-align: center;
+            padding: 1.2rem 0;
+            font-size: 1rem;
+            margin-top: 2rem;
+        }
+        @media (max-width: 700px) {
+            #contact {
+                padding: 1.2rem 0.7rem;
+            }
+            .navbar .container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container" style="display: flex; align-items: center; justify-content: center; gap: 2rem; flex-wrap: wrap;">
+            <div class="logo">
+                <img src="logo.png" alt="Logo" />
+            </div>
+    
+            <!-- Navigation Links -->
+            <ul class="nav-links" id="navLinks" style="display: flex; gap: 1.5rem; align-items: center; list-style: none; margin: 0; padding: 0;">
+                <li><a href="beazi_homecare.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <section class="hero" id="home">
+        <div class="hero-overlay">
+            <div class="container hero-content">
+                <h1>Compassionate In-Home Care for Your Loved Ones in Huntersville, NC & Surrounding Areas</h1>
+                <p>Supporting independence, dignity, and comfort at home in Huntersville, Charlotte, Cornelius, and Davidson.</p>
+                <a href="#contact" class="cta-button">Get Started</a>
+            </div>
+        </div>
+    </section>
+
+    <main class="container">
+        <section id="about" class="about-centered">
+            <h2>About Us</h2>
+            <p>Beazi Home Care Services is dedicated to providing high-quality, compassionate in-home care for seniors and individuals with disabilities in Huntersville, North Carolina, as well as Charlotte, Cornelius, and Davidson. Our team of trained caregivers is committed to enhancing the quality of life for our clients by promoting independence, dignity, and comfort in their own homes throughout the Lake Norman and Charlotte metro area.</p>
+            <p>We understand that every individual has unique needs, which is why we offer personalized care plans tailored to each client's specific requirements. Whether it's assistance with daily activities, companionship, or specialized care, we are here to support you and your loved ones every step of the way in Huntersville, Charlotte, Cornelius, and Davidson.</p>
+            <p>Our mission is to deliver exceptional care that allows our clients to live safely and independently in the comfort of their own homes. We believe in treating each person with respect, dignity, and compassion, ensuring they receive the highest standard of care in Huntersville, North Carolina and the surrounding communities.</p>
+        </section>   
+
+        <section class="service-photo 1">
+            <div class="photo-grid">
+                <div class="photo-with-text">
+                    <img src="./beazi photo 01.png" alt="Caregiver in blue uniform gently holding hands with an older woman in a white shirt, both seated in a comfortable home setting with soft natural light and a calm, supportive atmosphere in Huntersville, NC">
+                    <div class="care-block" style="max-width: 600px; margin: 1rem auto 2rem auto; text-align: center;">
+                        <h3>Personal Care Assistance for Seniors in Huntersville & Charlotte</h3>
+                        <p>We offer compassionate personal care services, including help with bathing, dressing, toileting, mobility support, and daily medication reminders—promoting dignity, independence, and well-being for your loved ones at home in Huntersville, Charlotte, Cornelius, and Davidson.</p>
+                    </div>
+                </div>
+                <div class="photo-with-text">
+                    <img src="./beazi photo 02.png" alt="Caregiver assisting an elderly man with a warm smile, in a cozy living room filled with natural light in Cornelius, NC">
+                    <div class="care-block" style="max-width: 600px; margin: 1rem auto 2rem auto; text-align: center;">
+                        <h3>Aging in Place Home Support in Davidson & Cornelius</h3>
+                        <p>Support independent senior living with our specialized aging-in-place home care services. We provide customized assistance, mobility solutions, and home adaptations to help older adults live safely and comfortably in their own homes in Davidson, Cornelius, Huntersville, and Charlotte.</p>
+                    </div>
+                </div>
+                <div class="photo-with-text">
+                    <img src="./beazi photo 03.png" alt="Caregiver preparing a meal in a bright kitchen, with fresh ingredients and a focus on healthy cooking in Charlotte, NC">
+                    <div class="care-block" style="max-width: 600px; margin: 1rem auto 2rem auto; text-align: center;">
+                        <h3>Customized Senior Care Services in Huntersville & Surrounding Areas</h3>
+                        <p>Explore personalized senior care solutions designed around the unique needs of each individual. Our goal is to enhance independence, health, and quality of life through flexible and compassionate in-home support in Huntersville, Charlotte, Cornelius, and Davidson.</p>
+                    </div>
+                </div>
+                <div class="photo-with-text">
+                    <img src="./beazi photo 04.png" alt="Caregiver and elderly woman engaging in a fun activity, surrounded by art supplies and a cheerful atmosphere in Huntersville, NC">
+                    <!-- No text under the last photo -->
+                </div>
+            </div>
+        </section>
+        
+        <section id="services" style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin: 3rem 0;">
+            <div class="services-grid" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; max-width: 1100px; width: 100%;">
+                <div class="service-item" style="background: #fff; border-radius: 10px; box-shadow: 0 1px 6px rgba(42,77,105,0.07); padding: 1.5rem 1.2rem; flex: 1 1 220px; max-width: 260px; min-width: 220px; text-align: center;">
+                    <strong>Personal Care</strong>
+                    <p>Our personal care services assist clients with essential daily activities such as bathing, grooming, dressing, toileting, and mobility. Our trained caregivers provide respectful, hands-on support that promotes hygiene, safety, and self-esteem—ensuring your loved ones in Huntersville, Charlotte, Cornelius, and Davidson feel comfortable and cared for.</p>
+                </div>
+                <div class="service-item" style="background: #fff; border-radius: 10px; box-shadow: 0 1px 6px rgba(42,77,105,0.07); padding: 1.5rem 1.2rem; flex: 1 1 220px; max-width: 260px; min-width: 220px; text-align: center;">
+                    <strong>Homemaking</strong>
+                    <p>We help maintain a clean, safe, and organized home environment in Huntersville, North Carolina and nearby areas. Our homemaking services include light housekeeping, laundry, meal planning and preparation, grocery shopping, and other household tasks. This support allows clients to focus on their well-being while enjoying a tidy and welcoming home.</p>
+                </div>
+                <div class="service-item" style="background: #fff; border-radius: 10px; box-shadow: 0 1px 6px rgba(42,77,105,0.07); padding: 1.5rem 1.2rem; flex: 1 1 220px; max-width: 260px; min-width: 220px; text-align: center;">
+                    <strong>Home Care Aide</strong>
+                    <p>Our certified home care aides offer a blend of personal care and health-related services tailored to each client’s needs in Huntersville, Charlotte, Cornelius, and Davidson. They assist with medication reminders, monitor vital signs, support chronic condition management, and provide companionship—ensuring holistic care that supports both physical and emotional health.</p>
+                </div>
+                <div class="service-item" style="background: #fff; border-radius: 10px; box-shadow: 0 1px 6px rgba(42,77,105,0.07); padding: 1.5rem 1.2rem; flex: 1 1 220px; max-width: 260px; min-width: 220px; text-align: center;">
+                    <strong>Companionship</strong>
+                    <p>Loneliness and isolation can impact overall well-being. Our companionship services offer meaningful social interaction through conversation, games, hobbies, and shared activities. Caregivers build trusting relationships that bring joy, comfort, and emotional support to daily life for seniors in Huntersville, Charlotte, Cornelius, and Davidson.</p>
+                </div>
+            </div>
+        </section>
+
+    <section id="what-we-do" style="background: #f8f9fa; padding: 3rem 0; border-radius: 16px; box-shadow: 0 2px 12px rgba(0,0,0,0.04); margin: 3rem 0;">
+        <h3 style="text-align:center; color:#2a4d69; margin-bottom:1.2rem;">Why Choose Beazi Home Care Services?</h3>
+        <p style="max-width: 700px; margin: 2.5rem auto 0 auto; text-align: center; color: #2a4d69; font-size: 1.1rem; line-height: 1.7; display: block;">
+            At Beazi Home Care Services, we are dedicated to helping you or your loved one in Huntersville, North Carolina, Charlotte, Cornelius, or Davidson receive the personalized care and support needed to live a safe, independent, and fulfilling life at home. Our mission is to deliver high-quality in-home care services that enhance the health, comfort, and well-being of every client in the Lake Norman and Charlotte metro area. We are committed to treating each individual with the respect, dignity, integrity, and compassion they deserve.
+        </p>
+        <!-- Suggestions for more content below -->
+        <div style="max-width: 900px; margin: 3rem auto 0 auto;">
+            <ul style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; list-style: none; padding: 0;">
+                <li style="flex:1 1 220px; max-width:260px; background:#fff; border-radius:8px; box-shadow:0 1px 6px rgba(42,77,105,0.07); padding:1.2rem; margin-bottom:1rem;">
+                    <strong>Locally Owned & Operated</strong>
+                    <p style="margin-top:0.5rem;">We are part of the Huntersville and Charlotte community, providing personalized care with a local touch.</p>
+                </li>
+                <li style="flex:1 1 220px; max-width:260px; background:#fff; border-radius:8px; box-shadow:0 1px 6px rgba(42,77,105,0.07); padding:1.2rem; margin-bottom:1rem;">
+                    <strong>Trained & Compassionate Caregivers</strong>
+                    <p style="margin-top:0.5rem;">Our staff is carefully screened, background-checked, and trained to deliver the highest standard of care.</p>
+                </li>
+                <li style="flex:1 1 220px; max-width:260px; background:#fff; border-radius:8px; box-shadow:0 1px 6px rgba(42,77,105,0.07); padding:1.2rem; margin-bottom:1rem;">
+                    <strong>Flexible Scheduling</strong>
+                    <p style="margin-top:0.5rem;">We offer hourly, daily, overnight, and live-in care options to fit your needs and lifestyle.</p>
+                </li>
+                <li style="flex:1 1 220px; max-width:260px; background:#fff; border-radius:8px; box-shadow:0 1px 6px rgba(42,77,105,0.07); padding:1.2rem; margin-bottom:1rem;">
+                    <strong>Personalized Care Plans</strong>
+                    <p style="margin-top:0.5rem;">Every client receives a customized care plan tailored to their unique needs and preferences.</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-info" style="margin-bottom: 2rem; text-align: center;">
+            <p><strong>Phone:</strong> 
+                <a href="tel:7042991547">704-299-1547</a> | 
+                <a href="tel:7046493022">704-649-3022</a>
+            </p>
+            <p><strong>Email:</strong> <a href="mailto:beazihomecareservices@gmail.com">beazihomecareservices@gmail.com</a></p>
+            <p><strong>Address:</strong> <a href="https://www.google.com/maps?q=9723+Northcross+Center+Court,+Suite+K,+Huntersville,+North+Carolina+28078" target="_blank" rel="noopener">9723 Northcross Center Court, Suite K, Huntersville, North Carolina 28078</a></p>
+            <p>We proudly serve clients in Huntersville, Charlotte, Cornelius, Davidson, and the surrounding North Carolina communities.</p>
+        </div>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+
+            <div class="form-group">
+            <label for="service" style="font-weight: 600; margin-bottom: 0.4rem; display: block;">Service Interested In:</label>
+            <select id="service" name="service" style="width: 100%; padding: 0.6rem; border-radius: 6px; border: 1px solid #bfc9d1; background: #f8fafc; font-size: 1rem; margin-bottom: 1.2rem;">
+                <option value="">-- Please Select --</option>
+                <option value="personal-care">Personal Care</option>
+                <option value="homemaking">Homemaking</option>
+                <option value="home-care-aide">Home Care Aide</option>
+                <option value="companionship">Companionship</option>
+                <option value="other">Other</option>
+            </select>
+            </div>
+
+            <div class="form-group">
+            <label for="preferred-contact" style="font-weight: 600; margin-bottom: 0.4rem; display: block;">Preferred Contact Method:</label>
+            <select id="preferred-contact" name="preferred-contact" style="width: 100%; padding: 0.6rem; border-radius: 6px; border: 1px solid #bfc9d1; background: #f8fafc; font-size: 1rem; margin-bottom: 1.2rem;">
+                <option value="">-- Please Select --</option>
+                <option value="phone">Phone</option>
+                <option value="text">Text</option>
+                <option value="email">Email</option>
+            </select>
+            </div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+        <div style="height: 2.5rem;"></div>
+        <div class="social-media" style="display: flex; justify-content: center; gap: 2rem; align-items: center; margin-bottom: 2rem;">
+            <a href="https://m.facebook.com/100092586957288/" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 0.5rem; font-size: 1.2rem; text-decoration: none;">
+                <img src="./2023_Facebook_icon.svg.webp" alt="Facebook logo in a bold white lowercase f on a bright blue circular background representing a link to Beazi Home Care Services Facebook page. The tone is professional and welcoming." style="width: 28px; height: 28px;"> Facebook
+            </a>
+            <a href="https://www.instagram.com/beazihomecare/" target="_blank" rel="noopener" style="display: flex; align-items: center; gap: 0.5rem; font-size: 1.23rem; text-decoration: none;">
+                <img src="instagram-vector-social-media-icon-7-june-2021-bangkok-thailand_53876-136728.avif" alt="Instagram logo in a rounded square, featuring a camera symbol in the center with a gradient background, representing a link to Beazi Home Care Services Instagram page. The tone is friendly and inviting." style="width: 28px; height: 28px;"> Instagram
+            </a>
+        </div>
+        </form>
+    </section>
+</main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Beazi Home Care Services. All rights reserved. Serving Huntersville, Charlotte, Cornelius, Davidson, and surrounding North Carolina areas.</p>
+        </div>
+    </footer>
+</body>
+</html>
+
+
